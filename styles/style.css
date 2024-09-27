@@ -1,0 +1,515 @@
+/* font import */
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1920px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+.pera-text {
+    font-size: 1.125rem;
+    color: #272727;
+}
+
+.btn {
+    background-color: rgba(229, 84, 115, 1);
+    padding: 20px 43px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* colors */
+
+/* dark-01 */
+.card-color-one {
+    background-color: rgba(167, 33, 98, 0.15);
+}
+
+/* dark-02 */
+.card-color-two {
+    background-color: rgba(5, 151, 160, 0.15);
+}
+
+/* dark -03 */
+.card-color-three {
+    background-color: rgba(71, 125, 17, 0.15);
+}
+
+/* bg-color */
+.bg-color {
+    background-color: rgba(229, 84, 115, 0.1);
+}
+
+/* header styles */
+header {
+    max-height: 850px;
+}
+
+.header-flex-container {
+    display: flex;
+    padding: 50px 240px 0 240px;
+    gap: 97px;
+}
+
+.header-details-container {
+    max-width: 708px;
+    max-height: 506px;
+    padding: 197px 0 147px 0;
+}
+
+.header-details-container p {
+    padding: 32px 0;
+    max-width: 632px;
+}
+
+.header-heading {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+/* our feature section styles */
+.our-feature-main-container {
+    margin: 178px auto 128px auto;
+    max-width: 1440px;
+}
+
+.feature-info {
+    margin: 0 auto;
+    max-width: 594px;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.feature-info-heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding-bottom: 24px;
+}
+
+.all-features-container-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-img-card {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 464px;
+    height: 538px;
+    border-radius: 50% 50% 0 0;
+    /* max-width,max-height dile div tar size change hoie jai kno?
+just width height dile thik thake. */
+
+    /* the img is not fit with the div without padding top 50px */
+
+
+    /* .feature-img-test{
+        padding: 110px 78px 0 76px;
+        background-color: rgba(167, 33, 98, 0.15);
+        border-radius:50% 50% 0 0;
+    } */
+
+    /* eta dile ei selector k r flex kora lage na. */
+}
+
+.feature-img {
+    height: 428px;
+    width: 310px;
+}
+
+.feature-img-tree-name {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+    padding-top: 32px;
+}
+
+.feature-img-tree-name a {
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* customer careness section styles */
+.customer-careness-flex-container {
+    margin: 128px 240px;
+    padding: 86px 175px;
+    border-radius: 8px;
+    background-color: rgba(39, 39, 39, 0.05);
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+
+.customer-care-pera {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* hot deals section styles */
+.hot-deal-container {
+    max-height: 620px;
+    display: flex;
+    gap: 186px;
+    background-color: rgba(229, 84, 115, 0.05);
+}
+
+.hot-deal-info {
+    text-align: center;
+    margin: 230px 0 162px 395px;
+}
+
+.hot-deal-info p {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.hot-deal-heading,
+.instagram-heading,
+.latest-deal-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+span {
+    color: rgba(229, 84, 115, 1);
+}
+
+.hot-deal-img-div {
+    padding: 100px 429px 100px 0;
+    text-align: center;
+}
+
+/* instagram section styles */
+.instagram-container-section {
+    padding-top: 128px;
+}
+
+.instagram-info {
+    text-align: center;
+    max-width: 594px;
+    margin: 0 auto;
+}
+
+.instagram-info p {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.instagram-imgs {
+    display: flex;
+    gap: 24px;
+    margin: 0 240px;
+}
+
+/* latest-deal-section-styles */
+.latest-deal-container {
+    background-image: url(/Rectangle\ 9.png);
+    /* i can not set the bg img here. */
+    /* finally it worked when i move the img to the main folder from asset folder .till now it doesn't find any path to set bg img.
+    if i move the img back to the asset folder then it will don't find the path again. */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px;
+    /* why max-width and height doesn't work */
+    margin: 128px 240px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.latest-deal-div {
+    padding: 122px 287px;
+    height: 206px;
+}
+
+.latest-deal-container p {
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+.latest-deal-container input[type=email] {
+    width: 700px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 16px;
+}
+
+input::placeholder {
+    color: rgba(39, 39, 39, 0.6);
+    padding-left: 22px;
+}
+
+/* footer styles */
+footer {
+    height: 449px;
+    background-color: rgba(17, 16, 16, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.footer-pera-one {
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.footer-pera-two {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-div {
+    width: 625px;
+    text-align: center;
+}
+
+/* responsive for small device */
+@media screen and (max-width:576px) {
+
+    .header-flex-container,
+    .customer-careness-flex-container,
+    .all-features-container-flex,
+    .hot-deal-container,
+    .instagram-imgs ,
+    .feature-img-tree-name{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-flex-container {
+        flex-direction: column-reverse;
+    }
+header{
+    padding-left: 15px;
+}
+    header,
+    .feature-img {
+        width: 100%;
+    }
+
+    .header-heading {
+        font-weight: 600;
+        font-size: 2rem
+    }
+
+    .header-flex-container img {
+        width: 80%;
+    }
+
+    .header-details-container,
+    .header-flex-container,
+    .hot-deal-img-div,
+    .latest-deal-div {
+        padding: 10px 0 10px 0;
+    }
+
+
+    .our-feature-main-container,
+    .hot-deal-info {
+        margin: 0 auto;
+    }
+
+
+    .feature-img-card {
+        margin: 0 15px;
+        width: 60%;
+        height: 80%;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-img{
+        height: 60%;
+    }
+    #tree-one{
+        position: absolute;
+        top: 1365px;
+        left:105px;
+    }
+    #tree-two{
+        position: absolute;
+        top: 1678px;
+        left:105px;
+    }
+    #tree-three{
+        position: absolute;
+        top: 2130px;
+        left:105px; 
+    }
+    .customer-careness-flex-container {
+        margin: 22px 24px;
+        padding: 8px 17px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hot-deal-heading,
+    .instagram-heading,
+    .latest-deal-heading {
+        text-wrap: wrap;
+    }
+
+    .hot-deal-img-div img,
+    .instagram-imgs img {
+        width: 50%;
+    }
+
+    .instagram-container-section {
+        padding-top: 10px;
+    }
+
+    .instagram-imgs {
+        margin: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .latest-deal-container {
+        margin: 10px;
+    }
+
+    .latest-deal-container input[type=email] {
+        width: 60%;
+        height: 43px;
+        margin-right: 6px;
+    }
+
+    form .btn {
+        width: 30%;
+        padding: 10px 15px;
+        font-weight: 500;
+    }
+
+    .latest-deal-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .latest-deal-container {
+        height: max-content;
+    }
+
+    .latest-deal-container p {
+        padding: 10px 0;
+    }
+
+    .latest-deal-div {
+        height: fit-content;
+    }
+
+    footer{
+        height: 300px;
+    }
+    .footer-heading {
+        font-size: 2rem;
+    }
+}
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header-flex-container {
+        padding: 5px 24px 0 24px;
+    }
+    .header-heading {
+        font-weight: 600;
+        font-size: 2rem;
+}
+.header-details-container {
+    padding-left:60px;
+    padding-top: 120px;
+}
+header img{
+    width: 50%;
+}
+.our-feature-main-container {
+    margin: 40px auto 12px auto;
+}
+.all-features-container-flex {
+    gap: 14px;
+}
+.feature-img-card{
+    width: 50%;
+    height: 50%;
+}
+.feature-img{
+    width: 70%;
+    height: 70%;
+}
+.card-color-two img{
+padding-top: 105px;
+}
+.card-color-one img{
+    padding-top: 35px;
+}
+.feature-img-tree-name {
+    gap: 40px;
+}
+.customer-careness-flex-container {
+    margin: 52px 24px;
+}
+.hot-deal-info {
+    text-align: center;
+    margin: 23px 0 16px 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hot-deal-img-div {
+    padding: 10px 42px 10px 0;
+}
+.hot-deal-container{
+    gap: 10px;
+}
+.hot-deal-heading, .instagram-heading, .latest-deal-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-wrap: wrap;
+}
+.instagram-container-section {
+    padding-top: 52px;
+}
+.instagram-imgs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    margin: 0 30px;
+}
+.latest-deal-container{
+    margin: 52px 24px;
+    height: fit-content;
+    background-size: 100%;
+}
+.latest-deal-div {
+    padding: 12px 28px;
+    height: 20%;
+}
+.latest-deal-container p {
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+footer {
+    height: 350px;
+}
+
+}
